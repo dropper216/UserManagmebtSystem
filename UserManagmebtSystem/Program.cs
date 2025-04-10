@@ -10,6 +10,9 @@ namespace UserManagmebtSystem
     {
         static void Main(string[] args)
         {
+            var manager = new UserManager();
+            manager.AddUser("test");
+            Console.WriteLine(manager.RemoveUser("test")); // Должно вывести True
         }
     }
 }
